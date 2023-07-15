@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@400;900&display=swap'); /* Bebas Neue 400, Heebo 400 e 900*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    color: white;
+    background-color: aquamarine;
+}
+
+a{
+    color: white;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+    font-family: Heebo, Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.308);
+    box-shadow: 1px 1px 10px black;
+    backdrop-filter: blur(5px); /*efeito blur*/
+}
+
+.nav h1{
+    display: flex;
+    padding-left: 70px;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 150px;
+    gap: 50px;
+}
+
+.nav a{
+    display: flex;
+    padding: 5px;
+}
+
+.nav li{
+    display: flex;
+    padding: 5px;
+    font-size: 26px;
+}
+
+.inicio {
+    background-image: url(Imagens/Design\ sem\ nome.png);
+    display: flex;
+    font-family: Bebas Neue;
+    padding: 70px;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.texto-box {
+    padding: 70px;
+    border: 3px solid white;
+}
+
+.texto-box h1 {
+    font-size: 48px;
+}
+
+.texto-box p{ 
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*************************************************************************************************************************************************************/
+
+.conteudo {
+    display: flex;
+    background: rgb(94,0,255);
+    background: linear-gradient(360deg, rgba(94,0,255,0) 90%, rgba(0,0,0,0.36738445378151263) 100%, rgba(0,0,0,1) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 180px;
+    padding-inline: 350px;
+    font-family: Bebas Neue;
+    color: black;
+    background-color: #e0e0e9;
+}
+
+.conteudo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.conteudo h1{
+    font-size: 48px;
+}
+
+.conteudo p{
+    font-size: 22px;
+}
+
+/*********************************************************************************************************************************************************************/
+
+
+
+.noticias{
+    background: rgb(94,0,255);
+    background: linear-gradient(360deg, rgba(94,0,255,0) 90%, rgba(0,0,0,0.36738445378151263) 100%, rgba(0,0,0,1) 100%);
+    background-color: rgb(112, 179, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    gap: 40px;
+}
+
+.noticias div{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    padding: 25px;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.658);
+    color: black;
+}
+
+.noticias img{
+    width: 350px;
+    height: 480px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.555);
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #141414;
+    padding: 20px 0;
+}
+  
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+  
+.contact-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.contact-list li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+  
+.contact-list li:last-child {
+    margin-right: 0;
+}
+  
+ .contact-list a {
+    color: #949494;
+    text-decoration: none;
+}
+  
+.contact-list a i {
+    margin-right: 5px;
+}
+
+@media (max-width: 1400px){
+    .noticias{
+        flex-wrap: wrap-reverse;
+        padding-inline: 75px;
+    }
+    .conteudo{
+        padding-inline: 250px;
+    }
+}
+
+@media (max-width: 1250px){
+    .inicio img{
+        width: 450px;
+        height: auto;
+    }
+    .inicio {
+        gap: 50px;
+    }
+    .nav ul{
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 1100px){
+    .conteudo{
+        padding-inline: 180px;
+    }
+}
+
+@media (max-width: 900px){
+   .inicio{
+        flex-wrap: wrap-reverse;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+    .nav h1{
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    .nav ul{
+        padding: 0px;
+        gap: 40px;
+    }
+    .conteudo{
+        padding-inline: 100px;
+        padding: 100px;
+    }
+
+}
+
+@media (max-width: 750px){
+    .nav ul{
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px){
+    .nav{
+        flex-direction: column;
+    }
+    .inicio img{ 
+        width: 350px;
+    }
+
+    .conteudo{
+        padding: 75px;
+    }
+    .conteudo p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px){
+    .nav ul{
+        gap: 5px;
+    }
+    .conteudo{
+        padding: 50px;
+    }
+    .conteudo p{
+        font-size: 15px;
+    }
+    .conteudo h1{
+        font-size: 40px;
+    }
+    .noticias{
+        padding: 25px;
+    }
+    .noticias img{ 
+        width: 300px;
+        height: auto;
+    }
+}
