@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@400;900&display=swap'); /* Bebas Neue 400, Heebo 400 e 900*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     margin: 0;
@@ -9,9 +11,10 @@
 }
 
 body{
-    width: 100%;
+    max-width: 1920px;
+    min-width: 360px;
     color: white;
-    background-color: aquamarine;
+    background-color: rgba(0, 0, 0, 0.575);
 }
 
 a{
@@ -21,6 +24,7 @@ a{
 .nav{
     position: fixed;
     width: 100%;
+    max-width: 1920px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +101,7 @@ a{
     justify-content: center;
     padding: 180px;
     padding-inline: 350px;
-    font-family: Bebas Neue;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     background-color: #e0e0e9;
 }
@@ -123,14 +127,13 @@ a{
 
 
 .noticias{
-    background: rgb(94,0,255);
-    background: linear-gradient(360deg, rgba(94,0,255,0) 90%, rgba(0,0,0,0.36738445378151263) 100%, rgba(0,0,0,1) 100%);
-    background-color: rgb(112, 179, 224);
+    background-color: #e0e0e9;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 150px;
     gap: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .noticias div{
